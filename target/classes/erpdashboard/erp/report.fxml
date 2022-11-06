@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1100.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="erpdashboard.erp.control.ReportController">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="250.0" styleClass="linear-grad-to-bottom-right" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane prefHeight="113.0" prefWidth="250.0">
+               <center>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="178.0" text="Reports" textAlignment="CENTER" textFill="#f2f2f2" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+               </center>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <right>
+                  <ImageView fitHeight="47.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@image/manager.png" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets right="20.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </right>
+            </BorderPane>
+            <Button fx:id="dashboardButton" alignment="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#onClick" prefHeight="80.0" prefWidth="250.0" styleClass="btn-bottom-right" text="Dashboard">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="itemButton" alignment="CENTER" graphicTextGap="15.0" mnemonicParsing="false" onAction="#onClick" prefHeight="80.0" prefWidth="250.0" styleClass="btn-bottom-right" text="Items">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/item.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="clientButton" alignment="CENTER" graphicTextGap="15.0" mnemonicParsing="false" onAction="#onClick" prefHeight="80.0" prefWidth="250.0" styleClass="btn-bottom-right" text="Clients">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/client.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="invoiceButton" alignment="CENTER" graphicTextGap="15.0" mnemonicParsing="false" onAction="#onClick" prefHeight="80.0" prefWidth="250.0" styleClass="btn-bottom-right" text="Invoices">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/invoice.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="adminButton" alignment="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#onClick" prefHeight="80.0" prefWidth="250.0" styleClass="btn-bottom-right" text="Admins">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/admin.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="logOutButton" mnemonicParsing="false" onAction="#onClick" prefHeight="36.0" prefWidth="104.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" styleClass="btn2" text="Log out">
+               <VBox.margin>
+                  <Insets left="75.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/logOut.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f2f2f2;" BorderPane.alignment="CENTER">
+         <top>
+            <StackPane alignment="CENTER_LEFT" prefHeight="112.0" prefWidth="850.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Hi,welcome to UAE Accounting System!" textFill="#445156" StackPane.alignment="CENTER_LEFT">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets left="50.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Button fx:id="goBackButton" mnemonicParsing="false" onAction="#onClick" style="-fx-background-color: #f2f2f2;" styleClass="onClickBtn" StackPane.alignment="CENTER_RIGHT">
+                     <StackPane.margin>
+                        <Insets right="40.0" />
+                     </StackPane.margin>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                           <image>
+                              <Image url="@image/back.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets bottom="-2.0" left="-2.0" right="-2.0" top="-2.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </StackPane>
+         </top>
+         <center>
+            <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>
